@@ -1,9 +1,9 @@
 from collections import namedtuple
 
-attributes_names = [
+offer_attributes_names = [
             "title",
             "price",
             "description",
             "categories",
         ]
-Attributes = namedtuple("Attributes", attributes_names)
+OfferAttributes = namedtuple("Attributes", offer_attributes_names)
