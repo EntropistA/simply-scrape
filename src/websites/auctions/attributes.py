@@ -1,3 +1,5 @@
+from collections import namedtuple
+
 attributes_names = [
             "title",
             "price",

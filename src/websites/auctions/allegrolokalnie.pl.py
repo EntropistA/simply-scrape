@@ -16,12 +16,3 @@ def allegro_lokalnie_offer(soup: BeautifulSoup):
         categories=categories,
     )
 
-
-def extract_attributes(url: str, soup: BeautifulSoup):
-    extractors = {
-        "https://allegrolokalnie.pl/oferta/": allegro_lokalnie_offer
-    }
-
-    for extract_url in extractors.keys():
-        if extract_url in url:
-            return extractors[extract_url](soup)

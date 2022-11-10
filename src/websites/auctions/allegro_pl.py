@@ -23,12 +23,3 @@ def allegro_offer(soup: BeautifulSoup):
     )
 
 
-def extract_attributes(url: str, soup: BeautifulSoup):
-    extractors = {
-        "https://allegro.pl/oferta/": allegro_offer,
-    }
-
-    for extract_url in extractors.keys():
-        if extract_url in url:
-            return extractors[extract_url](soup)
-
